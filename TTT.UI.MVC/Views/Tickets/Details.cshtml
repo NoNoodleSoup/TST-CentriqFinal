@@ -1,0 +1,90 @@
+﻿@model TTT.DATA.EF.TSTTicket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TSTTicket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketSubject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketSubject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TicketImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TicketImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSubmitted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateResolved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateResolved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTEmployee.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTEmployee.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTEmployee1.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTEmployee1.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTPriority.PriorityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTPriority.PriorityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTTicketStatus.TicketStatusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTTicketStatus.TicketStatusName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TicketID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

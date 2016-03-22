@@ -1,0 +1,74 @@
+﻿@model TTT.DATA.EF.TSTMail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TSTMail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MailSubject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailSubject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MailMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTEmployee.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTEmployee.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTEmployee1.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTEmployee1.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSTPriority.PriorityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSTPriority.PriorityName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
